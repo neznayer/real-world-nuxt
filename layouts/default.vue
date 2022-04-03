@@ -11,6 +11,18 @@ export default {
   components: {
     NavBar,
   },
+  head() {
+    return {
+      titleTemplate: '%s - Real Worls Events',
+      meta: [
+        { charset: 'utf-8' },
+        {
+          hid: 'description',
+          content: 'Where you can find all real worls events',
+        },
+      ],
+    }
+  },
 }
 </script>
 <style>
